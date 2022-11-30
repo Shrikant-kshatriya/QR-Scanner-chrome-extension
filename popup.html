@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome QR</title>
+    <link rel="stylesheet" href="./popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="container">
+        <div class="head">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 0 0 0 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"></path></svg>
+            <img src="./images/logo.png" alt="qr logo">
+            <h2>Awesome QR</h2>
+        </div>
+        <div class="content">
+            <div class="wrapper">
+                <button class="generate">Generate</button>
+                <button class="scan">Scan</button>
+            </div>
+            
+            <div class="wrapper-g">
+                <header>
+                    <h1>QR Code Generator</h1>
+                    <p>Paste a url or enter text to create QR code</p>
+                </header>
+                <div class="form">
+                    <input type="text" placeholder="Enter text or url">
+                    <button>Generate QR Code</button>
+                </div>
+                <div class="qr-code">
+                    <img src="" alt="qr-code">
+                </div>
+            </div>
+
+            <div class="wrapper-s">
+                <form id="scan" action="#">
+                    <input type="file" hidden>
+                    <img src="" alt="qr-code">
+                    <div class="content">
+                        <i class="fa-solid fa-upload"></i>
+                        <p>Drag and Drop <Br>Or Click to Browse</p>
+                    </div>
+                </form>
+                <div class="details">
+                    <textarea disabled></textarea>
+                    <div class="buttons">
+                        <button class="close">Close</button>
+                        <button class="copy">Copy Text</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <script src="./popup.js"></script>
+</body>
+</html>
